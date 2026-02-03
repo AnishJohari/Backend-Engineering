@@ -40,7 +40,31 @@ function markDone(id){
     writeFileSync(data)
 }
 
+function deleteTodo(id){
+    const data = readFileSync();
+
+    let found = false;
+    let newData = [];
+
+    for (let i = 0; i < data.length; i++){
+        if (data[i].id !== id){
+            newData.push(data[i]);
+        } else {
+            found = true;
+        }
+    }
+
+    if (!found){
+        console.log("DATA NOT FOUND..");
+        return;
+    }
+
+    writeFileSync(newData);
+    console.log("TODO DELETED..");
+}
+
 
 console.log(readFileSync())
 markDone(1770125380381)
 console.log(readFileSync())
+
