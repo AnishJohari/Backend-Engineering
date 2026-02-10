@@ -1,0 +1,30 @@
+body{
+    margin-left:300px;
+}
+.container{
+    border:none;
+    display:inline-block;
+    box-shadow: 9px 9px 9px rgb(99, 96, 96);
+    border-radius: 10px;
+
+    background-color:#A8E6A3;
+    padding-left:10px;
+    padding-right:50px;
+    padding-top:20px;
+    padding-bottom:10px;
+    
+}
+.container p{
+    margin-left:300px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.table,th,td {
+    
+    border: 2px solid black;
+    padding:10px;
+}
+table {
+    border-collapse:collapse;
+}
